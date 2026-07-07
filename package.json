@@ -1,0 +1,28 @@
+{
+  "name": "repo-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev":"nodemon app.js"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christiansonza/repo-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/christiansonza/repo-test/issues"
+  },
+  "homepage": "https://github.com/christiansonza/repo-test#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}
