@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - second_branch
 
   pull_request:
     branches:
@@ -22,6 +23,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
 
       # Backend
@@ -45,5 +47,8 @@ jobs:
 
 
       # Docker
-      - name: Build Docker Image
-        run: docker build -t my-app .
+      - name: Build Docker Image backend
+        run: docker build -t backend:v1 ./backend
+
+      - name: Build Docker Image frontend
+        run: docker build -t frontend:v1 ./frontend
